@@ -1,0 +1,15 @@
+# La fila representa el numero de apuesta actual (0-10) y la columna el 
+# numero de monedas en la mano de la maquina (0-5). El separador tienen que 
+# ser comas. Cuando hay un 1, la maquina sigue subiendo la apuesta. Mientas 
+# que donde hay un 0, la maquina desafia al oponente.
+0, 0, 1, 1, 1, 1
+0, 0, 1, 1, 1, 1
+0, 0, 1, 1, 1, 1
+0, 0, 1, 1, 1, 1
+0, 0, 1, 1, 1, 1
+0, 0, 1, 1, 1, 1
+0, 0, 0, 1, 1, 1
+0, 0, 0, 1, 1, 1
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
+0, 0, 0, 0, 0, 0
