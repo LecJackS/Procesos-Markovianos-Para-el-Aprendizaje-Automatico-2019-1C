@@ -163,6 +163,8 @@ class NotSoSimpleExtractor(FeatureExtractor):
                     safe_to_eat = False
                 features["dif-x-to-ghost-#"+str(gNum+1)] = int(next_x-gPos[0]) / (walls.width + walls.height)
                 features["dif-y-to-ghost-#"+str(gNum+1)] = int(next_y-gPos[1]) / (walls.width + walls.height)
+                # combining the two features so the linear model can use their relation
+                features["dif-xy-to-ghost-#"+str(gNum+1)] = features["dif-x-to-ghost-#"+str(gNum+1)]*features["dif-y-to-ghost-#"+str(gNum+1)]
 
         # if there is no danger of ghosts then add the food feature
         if safe_to_eat and food[next_x][next_y]:

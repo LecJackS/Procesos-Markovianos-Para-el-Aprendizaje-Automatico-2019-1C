@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[44]:
+# In[28]:
 
 
 get_ipython().run_line_magic('load_ext', 'autoreload')
 
 
-# In[45]:
+# In[29]:
 
 
 #import autoreload
@@ -16,7 +16,7 @@ get_ipython().run_line_magic('reload_ext', 'autoreload')
 get_ipython().run_line_magic('autoreload', '2')
 
 
-# In[46]:
+# In[30]:
 
 
 # qlearningAgents.py
@@ -42,7 +42,7 @@ import numpy as np
 import pprint
 
 
-# In[47]:
+# In[31]:
 
 
 def random_argmax(v):
@@ -56,7 +56,7 @@ def random_argmax(v):
 # 
 # Q(s,a) is a dictionary with each state-action value it visits  
 
-# In[48]:
+# In[32]:
 
 
 # Parent class in learningAgents.py
@@ -184,7 +184,7 @@ class QLearningAgent(ReinforcementAgent):
         return self.computeValueFromQValues(state)
 
 
-# In[49]:
+# In[33]:
 
 
 class PacmanQAgent(QLearningAgent):
@@ -219,7 +219,7 @@ class PacmanQAgent(QLearningAgent):
         return action
 
 
-# In[50]:
+# In[34]:
 
 
 class ApproximateQAgent(PacmanQAgent):
@@ -307,17 +307,20 @@ class ApproximateQAgent(PacmanQAgent):
             pass
 
 
-#  %%javascript
-#  IPython.notebook.save_notebook()
-
-# In[36]:
+# In[ ]:
 
 
-# from subprocess import call
-# command = ('ipython nbconvert --to script qlearningAgents.ipynb')
-# call(command, shell=True)
+get_ipython().run_cell_magic('javascript', '', 'IPython.notebook.save_notebook()')
 
-# %autoreload 2
+
+# In[ ]:
+
+
+from subprocess import call
+command = ('ipython nbconvert --to script qlearningAgents.ipynb')
+call(command, shell=True)
+
+get_ipython().run_line_magic('autoreload', '2')
 
 
 # In[ ]:

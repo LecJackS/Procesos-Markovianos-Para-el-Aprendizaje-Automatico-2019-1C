@@ -168,6 +168,7 @@ class ReinforcementAgent(ValueEstimationAgent):
         epsilon  - exploration rate
         gamma    - discount factor
         numTraining - number of training episodes, i.e. no learning after these many episodes
+        iteration - actual iteration (while training)
         """
         if actionFn == None:
             actionFn = lambda state: state.getLegalActions()
