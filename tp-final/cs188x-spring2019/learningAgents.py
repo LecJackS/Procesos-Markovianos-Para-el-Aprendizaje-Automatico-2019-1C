@@ -102,7 +102,7 @@ class ReinforcementAgent(ValueEstimationAgent):
     #    Override These Functions      #
     ####################################
 
-    def update(self, state, action, nextState, reward):
+    def update(self, state, action, nextState, reward, terminal_state):
         """
                 This class will call this function, which you write, after
                 observing a transition and reward
